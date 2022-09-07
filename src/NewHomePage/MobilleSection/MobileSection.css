@@ -1,0 +1,64 @@
+.mobile-sec-div{
+    height: 100vh;
+    width: 100vw;
+    background: var(--secondary-color);
+    margin: 5rem, 10rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-items: center;
+    align-items: center;
+    background-image: url(../home_img/tradeBack.png);
+}
+.mockup{
+    width: 100%;
+    height: 90%;
+}
+.mockupdiv{
+    width: 23rem;
+    height: 55rem;
+    position: relative;
+    overflow-x: hidden;
+}
+.mobile-sec-text{
+    max-width: 80%;
+    justify-self: start;
+}
+.mobile-sec-text h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.mobile-sec-text p {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    line-height: 2.3rem;
+    color: white;
+}
+.tex-mockup-divv{
+    overflow-y: hidden;
+}
+.mockup-text{
+    width: 16rem;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 19rem;
+    left: 3.4rem;
+    overflow-x: hidden;
+}
+.mockup-text-logo {
+    display: flex;
+    justify-content: center;
+}
+.mockup-text-logo img{
+    width: 6rem;
+}
+.google-app-redirect {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 1rem;
+}
+.google-app-redirect img {
+    width: fit-content;
+    margin-left: -1rem;
+}
