@@ -42,12 +42,35 @@ const Footer = styled.div`
   padding: 0 3rem;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 1000px){
+    padding: 0 1rem;
+  }
+  @media screen and (max-width: 600px){
+    height: 120vh;
+  }
   img {
     width: 80%;
     height: 63%;
     margin-top: 13rem;
     position: relative;
+    @media screen and (max-width: 1510px){
+    width: 100%;
   }
+  @media screen and (max-width: 1000px){
+    width: 180%;
+    height: 53%;
+  }
+  @media screen and (max-width: 600px){
+    margin-top: 3rem;
+    width: 100%;
+    height: 30%;
+  }
+  }
+ 
+
+
+
+
 `
 const Absolute = styled.div`
   display: flex;
@@ -55,18 +78,60 @@ const Absolute = styled.div`
   align-items: flex-end;
   width: 60%;
   top: 10%;
+  @media screen and (max-width: 1510px){
+  width: 80%;
+}
+@media screen and (max-width: 1000px){
+    width: 90%;
+    /* align-items: center; */
+    gap: 3rem;
+}
+@media screen and (max-width: 600px){
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  
+}
+@media screen and (max-width: 450px){
+  gap: 0;
+}
   div{
     flex: 1;
     margin-bottom: 1rem;
+    @media screen and (max-width: 600px){
+    margin-left: 1rem;
+}
     h1 {
       font-size: 3.5rem;
       margin-bottom: 1.3rem;
+      @media screen and (max-width: 1510px){
+        font-size: 3rem;
+  }
+      @media screen and (max-width: 1000px){
+          font-size: 2.5rem;
     }
+    @media screen and (max-width: 790px){
+          font-size: 2rem;
+    }
+    @media screen and (max-width: 600px){
+        width: 70%;
+        font-size: 1.7rem;
+      }
+  }
     p {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-    }
+      @media screen and (max-width: 790px){
+        font-size: 1.1rem;
+        width: 80%;
   }
+      @media screen and (max-width: 600px){
+        font-size: 1rem;
+        width: 80%;
+  }
+    }
+}
 `
 const Forms = styled.form`
   display: flex;
@@ -84,13 +149,19 @@ const Forms = styled.form`
   top: 13%;
   box-sizing: border-box;
   align-items: left;
+  @media screen and (max-width: 600px){
+    width: 100%;
+    padding: 2.5rem 1rem;
+  }
 
   div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
+    @media screen and (max-width: 600px){
+    margin-left: 0;
 
+}
   }
   input {
     height: 3rem;
@@ -98,6 +169,9 @@ const Forms = styled.form`
     border-radius: 0.3rem;
     outline: none;
     border: 1px solid #0A142F;
+    @media screen and (max-width: 1000px){
+   height: 2.5rem;
+}
   }
   textarea {
     border: 1px solid #0A142F;
@@ -105,6 +179,9 @@ const Forms = styled.form`
     outline: none;
     height: 15rem;
     border-radius: 0.3rem;
+    @media screen and (max-width: 1000px){
+    height: 10rem;
+}
   }
   button {
     color: white;
